@@ -1,0 +1,22 @@
+{
+  "name": "example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Salesforce DX Project",
+  "scripts": {
+    "lint": "eslint **/{aura,lwc}/**",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,permissions,cls,trigger,xml,yaml,yml}\"",
+    "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,permissions,cls,trigger,xml,yaml,yml}\""
+  },
+  "devDependencies": {
+    "@lwc/eslint-plugin-lwc": "^1.0.0",
+    "@salesforce/eslint-config-lwc": "^3.0.0",
+    "@salesforce/eslint-plugin-aura": "^2.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "@salesforce/prettier-plugin-apex": "^2.0.0"
+  }
+}

@@ -1,0 +1,40 @@
+# Git ignore file for Salesforce DX projects
+
+# Dependencies
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Salesforce cache
+.sfdx/
+.sf/
+
+# LWC compilation
+**/lwc/**/*.js
+**/lwc/**/*.css
+**/lwc/**/*.html
+
+# Test results
+.nyc_output/
+coverage/
+test-results.json
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local

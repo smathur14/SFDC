@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "strict": true,
+    "lib": ["es2021", "dom"],
+    "allowJs": true,
+    "ignoreDeprecations": "6.0",
+    "paths": {
+      "c/*": ["./*"],
+      "lightning/*": ["node_modules/@salesforce/sfdx-lwc-jest/src/lightning/*"]
+    }
+  },
+  "include": [
+    "**/*",
+    "../../../.sfdx/typings/lwc/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".sfdx",
+    ".sf"
+  ]
+}

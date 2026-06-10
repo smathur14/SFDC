@@ -1,0 +1,14 @@
+{
+  "sfdcLoginUrl": "https://docusign-6d-dev-ed.develop.my.salesforce.com",
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "Salesforce DX Project",
+  "namespace": "",
+  "sfdcProjectVersion": "60.0",
+  "sourceApiVersion": "60.0",
+  "packageAliases": {}
+}

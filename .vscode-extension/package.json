@@ -1,0 +1,54 @@
+{
+  "name": "salesforce-deploy-helper",
+  "displayName": "Salesforce Deploy Helper",
+  "description": "Right-click deploy to Salesforce org",
+  "version": "1.0.0",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.deploySingleFile",
+    "onCommand:extension.deployProject"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.deploySingleFile",
+        "title": "Deploy to Source Org"
+      },
+      {
+        "command": "extension.deployProject",
+        "title": "Deploy Project to Source Org"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.deploySingleFile",
+          "group": "7_modification@1",
+          "when": "!explorerResourceIsFolder"
+        },
+        {
+          "command": "extension.deployProject",
+          "group": "7_modification@2",
+          "when": "resourceExtname == .cls || resourceExtname == .js || resourceExtname == .html || resourceExtname == .css || resourceExtname == .xml || resourceExtname == .trigger || resourceExtname == .page"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "extension.deploySingleFile",
+          "group": "7_modification@1"
+        },
+        {
+          "command": "extension.deployProject",
+          "group": "7_modification@2"
+        }
+      ]
+    }
+  }
+}
