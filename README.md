@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Salesforce DX Project
 
 Welcome to your Salesforce DX project!
@@ -80,3 +81,7 @@ The project is configured in `sfdx-project.json`:
 
 - [Salesforce DX Documentation](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/)
 - [Salesforce CLI Commands](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/)
+=======
+# SFDC
+Salesforce Projects
+>>>>>>> edffdc740e2e1472c97d8a5690d6c25eafb77a3f
